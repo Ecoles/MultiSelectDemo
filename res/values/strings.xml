@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MultiSelectDemoActivity!</string>
+    <string name="app_name">MultiSelectDemo</string>
+    <string name="showDialog">Show Dialog</string>
+    <string name="multiSelectTitle">Select Items</string>
+    <string name="btnClose">Close</string>
+
+    <string-array name="itemList">
+        <item>Monitor</item>
+        <item>Keyboard</item>
+        <item>Mouse</item>
+        <item>Tower</item>
+    </string-array>
+
+</resources>

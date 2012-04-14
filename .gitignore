@@ -1,0 +1,6 @@
+## Ignore Compiler Files
+*/bin/*
+*/gen/*
+
+## Ignore Mac Files
+*.DS_Store
