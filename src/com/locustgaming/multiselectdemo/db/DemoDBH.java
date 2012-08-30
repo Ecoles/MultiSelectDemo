@@ -41,15 +41,17 @@ public class DemoDBH extends SQLiteOpenHelper
         String timeStamp = new Timestamp(Calendar.getInstance().getTimeInMillis()).toString();
         ContentValues values = new ContentValues();
 
-        for (int i = 0; i < items.length; i++)
-        {
-            values.put("name", items[i]);
-            values.put("entryUsr", 1);
-            values.put("entryDate", timeStamp);
-            values.put("updateUsr", 1);
-            values.put("updateDate", timeStamp);
-            db.insert("items", null, values);
-        }
+        // Make a list long enough to scroll off the window
+        for (int j = 0; j < 5; j++)
+            for (int i = 0; i < items.length; i++)
+            {
+                values.put("name", items[i]);
+                values.put("entryUsr", 1);
+                values.put("entryDate", timeStamp);
+                values.put("updateUsr", 1);
+                values.put("updateDate", timeStamp);
+                db.insert("items", null, values);
+            }
 
     }
 }
